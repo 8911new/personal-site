@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="林深 — 独立设计师与写作者。在系统设计与文字之间游走。">
+    <title>林深 · 设计与写作</title>
+
+    <!-- 字体：Fraunces 可变衬线 + Manrope + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 鼠标光晕跟随层 -->
+<div class="cursor-spotlight" aria-hidden="true"></div>
+
+<!-- 顶部导航 -->
+<header class="nav" id="top">
+    <a href="#top" class="nav__brand">
+        <span class="nav__mark">林</span>
+        <span class="nav__name">林深 / Lin Shen</span>
+    </a>
+    <nav class="nav__links" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#writing">文章</a>
+        <a href="#work">作品</a>
+        <a href="#contact" class="nav__cta">联络</a>
+    </nav>
+    <button class="nav__menu-toggle" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span>
+    </button>
+</header>
+
+<!-- 移动端菜单 -->
+<div class="mobile-menu" aria-hidden="true">
+    <a href="#about">关于</a>
+    <a href="#writing">文章</a>
+    <a href="#work">作品</a>
+    <a href="#contact">联络</a>
+</div>
+
+<main>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-label="首屏">
+        <div class="hero__meta">
+            <span class="eyebrow">— 上海 · 2026</span>
+        </div>
+        <h1 class="hero__title">
+            在系统设计<br>
+            与<em>文字</em>之间<br>
+            <span class="hero__title-quiet">游走的人。</span>
+        </h1>
+        <div class="hero__footer">
+            <p class="hero__lede">
+                独立设计师 & 写作者。过去八年里，我为初创团队设计产品界面，
+                为出版社写非虚构专栏，也做一些字与字之间的安静练习。
+            </p>
+            <a href="#writing" class="hero__scroll">
+                <span>向下阅读</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                    <path d="M12 4v16M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+        <div class="section__head">
+            <span class="section__num">01</span>
+            <h2 class="section__title" id="about-title">关于</h2>
+            <span class="section__kicker">A short self-portrait</span>
+        </div>
+
+        <div class="about__grid">
+            <div class="about__portrait" aria-hidden="true">
+                <div class="about__portrait-frame">
+                    <!-- 抽象头像：CSS 渐变 + 字 -->
+                    <span class="about__portrait-mark">林</span>
+                </div>
+            </div>
+
+            <div class="about__text">
+                <p class="about__lede">
+                    我叫林深，住在上海。我相信好的设计是克制的，好的文字是缓慢的。
+                </p>
+                <p>
+                    工作上，我专注于两类事情：一是为早期团队从零搭建产品界面与设计系统，
+                    包括字体规格、色彩语言、组件库与写作规范；二是为媒体与出版机构写非虚构
+                    长稿，话题多落在城市、工具与日常美学之间。
+                </p>
+                <p>
+                    闲暇时我做字体练习、读旧杂志、在城市的不同角落喝咖啡。
+                    我认为「慢」不是缺陷，而是一种被低估的能力。
+                </p>
+
+                <dl class="about__facts">
+                    <div><dt>现在</dt><dd>独立工作室 · 自由执业</dd></div>
+                    <div><dt>此前</dt><dd>某产品公司 设计负责人</dd></div>
+                    <div><dt>擅长</dt><dd>设计系统 · 编辑写作 · 字体排印</dd></div>
+                    <div><dt>城市</dt><dd>上海，偶尔在杭州</dd></div>
+                    <div><dt>写作</dt><dd>《单读》《T 中文》等刊物</dd></div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Writing ============ -->
+    <section class="section section--writing" id="writing" aria-labelledby="writing-title">
+        <div class="section__head">
+            <span class="section__num">02</span>
+            <h2 class="section__title" id="writing-title">文章</h2>
+            <span class="section__kicker">Selected writing, 2023–2026</span>
+        </div>
+
+        <ol class="article-list" role="list">
+
+            <li class="article" tabindex="0">
+                <div class="article__index">
+                    <span class="article__num">01</span>
+                    <span class="article__date">2026.04</span>
+                </div>
+                <div class="article__body">
+                    <h3 class="article__title">关于留白：克制是一种慷慨</h3>
+                    <p class="article__excerpt">
+                        我们以为留白是设计师的懒惰，其实它是最难的部分——
+                        把什么不放进来，比决定放什么更费力。
+                    </p>
+                    <div class="article__meta">
+                        <span>设计随笔</span><span>·</span><span>9 分钟阅读</span>
+                    </div>
+                </div>
+                <span class="article__arrow" aria-hidden="true">→</span>
+            </li>
+
+            <li class="article" tabindex="0">
+                <div class="article__index">
+                    <span class="article__num">02</span>
+                    <span class="article__date">2025.11</span>
+                </div>
+                <div class="article__body">
+                    <h3 class="article__title">我们为什么需要慢界面</h3>
+                    <p class="article__excerpt">
+                        当所有产品都在追求「更快、更顺、更无感」，
+                        我开始怀疑：界面是否也应该允许停顿、迟疑与必要的笨拙。
+                    </p>
+                    <div class="article__meta">
+                        <span>产品思考</span><span>·</span><span>14 分钟阅读</span>
+                    </div>
+                </div>
+                <span class="article__arrow" aria-hidden="true">→</span>
+            </li>
+
+            <li class="article" tabindex="0">
+                <div class="article__index">
+                    <span class="article__num">03</span>
+                    <span class="article__date">2025.06</span>
+                </div>
+                <div class="article__body">
+                    <h3 class="article__title">写作者的工具箱：2026</h3>
+                    <p class="article__excerpt">
+                        一份不追求效率、只追求「让自己愿意坐下来写」的工具清单。
+                        包含纸笔、字体、播放列表，与一杯不被打断的咖啡。
+                    </p>
+                    <div class="article__meta">
+                        <span>工具与流程</span><span>·</span><span>11 分钟阅读</span>
+                    </div>
+                </div>
+                <span class="article__arrow" aria-hidden="true">→</span>
+            </li>
+
+            <li class="article" tabindex="0">
+                <div class="article__index">
+                    <span class="article__num">04</span>
+                    <span class="article__date">2024.09</span>
+                </div>
+                <div class="article__body">
+                    <h3 class="article__title">一次失败的命名</h3>
+                    <p class="article__excerpt">
+                        我为一个产品想了一百二十六个名字，最后用了第一个。
+                        这是一篇关于命名、自负与团队政治的失败复盘。
+                    </p>
+                    <div class="article__meta">
+                        <span>故事 · 反思</span><span>·</span><span>18 分钟阅读</span>
+                    </div>
+                </div>
+                <span class="article__arrow" aria-hidden="true">→</span>
+            </li>
+
+        </ol>
+    </section>
+
+    <!-- ============ Work / Portfolio ============ -->
+    <section class="section section--work" id="work" aria-labelledby="work-title">
+        <div class="section__head">
+            <span class="section__num">03</span>
+            <h2 class="section__title" id="work-title">作品</h2>
+            <span class="section__kicker">Selected work, 2023–2026</span>
+        </div>
+
+        <div class="work-grid">
+
+            <article class="work work--lg" tabindex="0">
+                <div class="work__visual work__visual--a" aria-hidden="true">
+                    <span class="work__glyph">回声</span>
+                </div>
+                <div class="work__info">
+                    <span class="work__num">W·01</span>
+                    <h3 class="work__title">回声 / Echo</h3>
+                    <p class="work__desc">
+                        为长期写作者设计的笔记应用。强调时间尺度、版本回溯与不被打扰的写作流。
+                        负责产品策略、信息架构与完整界面设计。
+                    </p>
+                    <div class="work__tags">
+                        <span>产品设计</span><span>设计系统</span><span>排印</span>
+                    </div>
+                    <span class="work__year">2026</span>
+                </div>
+            </article>
+
+            <article class="work work--md" tabindex="0">
+                <div class="work__visual work__visual--b" aria-hidden="true">
+                    <span class="work__glyph">字间</span>
+                </div>
+                <div class="work__info">
+                    <span class="work__num">W·02</span>
+                    <h3 class="work__title">字间 / Between</h3>
+                    <p class="work__desc">
+                        一组探索中文字符「字间距」的字体实验。
+                        从 0 到 1，看两个汉字之间可以发生什么。
+                    </p>
+                    <div class="work__tags">
+                        <span>字体设计</span><span>实验</span>
+                    </div>
+                    <span class="work__year">2025</span>
+                </div>
+            </article>
+
+            <article class="work work--md" tabindex="0">
+                <div class="work__visual work__visual--c" aria-hidden="true">
+                    <span class="work__glyph">海风</span>
+                </div>
+                <div class="work__info">
+                    <span class="work__num">W·03</span>
+                    <h3 class="work__title">海风书店 / Seabreeze</h3>
+                    <p class="work__desc">
+                        一家独立书店的完整视觉系统：标识、字体定制、出版物版式与橱窗装置。
+                        以「潮间带」为意象，平衡书与海的关系。
+                    </p>
+                    <div class="work__tags">
+                        <span>品牌设计</span><span>出版</span><span>空间</span>
+                    </div>
+                    <span class="work__year">2024</span>
+                </div>
+            </article>
+
+            <article class="work work--lg" tabindex="0">
+                <div class="work__visual work__visual--d" aria-hidden="true">
+                    <span class="work__glyph">晨</span>
+                </div>
+                <div class="work__info">
+                    <span class="work__num">W·04</span>
+                    <h3 class="work__title">晨间通讯 / Morning</h3>
+                    <p class="work__desc">
+                        一份每周二早晨送达的个人邮件订阅，写城市、工具与日常美学。
+                        两年，104 期，约 12,000 名读者。
+                        我负责全部写作、版式与发行流程。
+                    </p>
+                    <div class="work__tags">
+                        <span>内容产品</span><span>编辑</span><span>版式</span>
+                    </div>
+                    <span class="work__year">2023–至今</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ============ Contact / Footer ============ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="section__head">
+            <span class="section__num">04</span>
+            <h2 class="section__title" id="contact-title">联络</h2>
+            <span class="section__kicker">Say hello, slowly</span>
+        </div>
+
+        <div class="contact">
+            <p class="contact__line">
+                如果你正在做一件需要耐心的事——
+                一个产品、一本书、一间店、一段漫长的写作——
+                我们也许可以聊聊。
+            </p>
+            <a href="mailto:hello@linshen.studio" class="contact__email">hello@linshen.studio</a>
+
+            <ul class="contact__links">
+                <li><a href="#" rel="noopener">公众号 · 林深的字</a></li>
+                <li><a href="#" rel="noopener">即刻</a></li>
+                <li><a href="#" rel="noopener">小红书</a></li>
+                <li><a href="#" rel="noopener">RSS 订阅</a></li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <span>© 2026 林深工作室 · 内容均为虚构示例</span>
+    <span>设计 & 编码：以杂志编辑风构建</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
